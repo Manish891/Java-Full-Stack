@@ -1,0 +1,10 @@
+let a = 6;
+let b = 5;
+console.log(a & b);
+console.log(a | b);
+console.log( ~ b);
+console.log(5 >7 && 6 < 5);
+console.log(7 > 9 || 8 < 9);
+console.log(7 < 9 || 9 < 8 || 4 > 3 || 6 < 5 || 3 < 2);
+console.log(7 < 8 || 7 < 8 || 5 > 3 || 6 < 5 || 8 < 2);
+console.log(7 < 9 && 9 < 8 && 4 > 3 && 6 < 5 && 3 < 2);
