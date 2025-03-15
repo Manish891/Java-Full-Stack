@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage Example</title>
+</head>
+<body>
+    <h2>Session Storage Example</h2>
+    
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="saveSession()">Save</button>
+    <button onclick="getSession()">Retrieve</button>
+    <button onclick="clearSession()">Clear</button>
+
+    <p id="displayName"></p>
+
+    <script>
+        function saveSession() {
+            let name = document.getElementById("nameInput").value;
+            sessionStorage.setItem("sessionName", name);
+        }
+
+        function getSession() {
+            let storedName = sessionStorage.getItem("sessionName");
+            document.getElementById("displayName").innerText = storedName ? "Session Name: " + storedName : "No name saved";
+        }
+
+        function clearSession() {
+            sessionStorage.removeItem("sessionName");
+            document.getElementById("displayName").innerText = "";
+        }
+    </script>
+</body>
+</html>

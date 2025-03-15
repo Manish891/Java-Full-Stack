@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+ul{
+    list-style-type:none;
+}
+.Logi{
+    width: 300px;
+}

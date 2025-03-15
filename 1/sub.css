@@ -1,0 +1,133 @@
+.container{
+    width : 70vw;
+    height : 93vh;
+    border : 4px solid white;
+    margin-top: 20px;
+    margin-left: 170px;
+    background-color: white;
+    border-radius: 10px;
+}
+body{
+    background-image: url("images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.one{
+    width : 300px;
+    height : 540px;
+    border: 2px solid orange;
+    background-color:orange;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+.sign {
+    position: relative;
+    top:-850px;
+    left :550px;
+}
+.image{
+    position: relative;
+    top : -400px;
+    left : 60px;
+    width : 200px;
+    height : 300px;
+}
+
+.name{
+    position: relative;
+    top : -850px;
+    left : 400px;
+}
+#Fname{
+    position:relative;
+    top : 15px;
+    padding: 10px;
+}
+.lname{
+    position:relative;
+    top : -29px;
+    left : 50px;
+}
+#Lname{
+    position: relative;
+    top : -24px;
+    left : 240px;
+    padding : 10px;
+}
+.mail{
+    margin-left: 400px;
+    margin-top : -850px;
+    width : 100px;
+}
+#email{
+    padding: 10px;
+    margin-top: 4px;
+}
+.phone{
+    margin-left: 400px;
+    margin-top: 8px;
+}
+#number{
+    padding: 10px;
+    margin-top: 4px;
+}
+.gender{
+    margin-left: 400px;
+    margin-top: 7px;
+}
+.Male{
+    margin-top: 15px;
+    width : 80px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style:dashed;
+}
+.Female{
+    margin-left: 120px;
+    margin-top: -43px;
+    border-style: dashed;
+    border-radius: 10px;
+    width : 90px;
+    padding: 10px;
+}
+.language{
+    position: relative;
+    left : 670px;
+    top : -32px;
+
+}
+#languages{
+    height : 25px;
+}
+.gender1{
+    width :179px;
+}
+.password{
+    margin-left: 400px;
+}
+#Password{
+    margin-top: 4px;
+    padding: 10px;
+}
+.confirm{
+    position: relative;
+    top :-30px;
+    left :20px;
+}
+#Confirm{
+    position: relative;
+    left :200px;
+    top :-38px;
+    padding: 10px;
+}
+.para{
+    margin-left: 400px;
+    margin-top: -20px;
+}
+.btn{
+    position: relative;
+    left:580px; 
+    top : -35px;
+}

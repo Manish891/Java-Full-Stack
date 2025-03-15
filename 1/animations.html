@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>CSS Animations</title>
+    <style>
+        div{
+            width: 80px;
+            height: 80px;
+            background-color: black;
+            position:relative;
+            animation-name: anime;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: 5;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+            }
+        @keyframes anime {
+            /* from{background-color: black;}
+            to{background-color: blue;} */
+            0%,100%{background-color: black; left: 0px; top: 0px;}
+            25%{background-color: green; left: 250px; top: 0px;}
+            50%{background-color: aqua; left: 250px; top: 250px;}
+            75%{background-color: blueviolet; left: 0px; top: 250px;}
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    </head>
+    <body>
+         <h1>CSS Animations</h1>
+         <div></div>
+    </body>
+</html>

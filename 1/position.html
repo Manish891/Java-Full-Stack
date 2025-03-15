@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Positions</title>
+    </head>
+    <style>
+        
+        .main{
+            border: 2px solid black;
+            padding: 20px;
+        }
+    
+        div.static{
+            position:static;
+            border: 3px solid gold;
+        }
+        div.relative{
+            position:relative;
+            left: 40px;
+            border: 3px solid brown;
+        }
+        div.fixed{
+            position:fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid navy;
+        }
+        div.absolute{
+            position:absolute;
+            bottom: 50px;
+            left: 40px;
+            width: 400px;
+            height: 200px;
+            border: 3px solid chartreuse;
+        }
+        div.sticky{
+            position:sticky;
+            top: 0;
+            padding: 10px;
+            background-color: bisque;
+        }
+    </style>
+    <body>
+        <h1>Positions:</h1>
+        <div class="static">
+            This div element has position: static;
+        </div>
+        <br>
+        <div class="relative">
+            This div element has position: relative;
+        </div>
+        <br>
+        <div class="fixed">
+            This div element has position: fixed;
+        </div>
+        <br>
+        <div class="absolute">
+            This div element has position: absolute;
+        </div>
+        <br>
+        <div class="sticky">
+            This div element has position: sticky;
+        </div>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub</title>
+    <link rel="stylesheet" href="sub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+
+        <div>
+            <img src="./charan.jpg" class="image">
+        </div>
+        <h1 class="sign">Sign up</h1>
+        
+        <form onsubmit="return verifyPassword()">
+            <div class="name">
+                <label class="fname">First Name:</label><br>
+                <input type="text" placeholder="Enter your First Name" id="Fname" required>
+                <label class="lname">Last Name:</label><br>
+                <input type="text" placeholder="Enter your Last Name" id="Lname" required>
+            </div>
+            <div class="mail">
+                <label>E-mail id:</label><br>
+                <input type="email" id="email" placeholder="abc@123" required>
+            </div>
+            <div class="phone">
+                <label>Phone No:</label><br>
+                <!-- <input type="tel"  minlength="10" maxlength="10" placeholder="+91" id="number" required> -->
+                 <input type="tel">
+            </div>
+            <div class="gender">
+                <label>Gender:</label><br>
+                <div class="Male">
+                    <i class="fa-solid fa-person"></i>
+                    <label>Male</label>
+                    <input name="Gender" type="radio" id="male">
+                </div>
+                <div class="Female">
+                    <i class="fa-solid fa-person-dress"></i>
+                    <label>Female</label>
+                    <input name="Gender" type="radio" id="female">
+                </div>
+            </div>
+            <div class="gender1">
+                <label for="Languages" class="language">Prefer Not To Say</label>
+                <select name="languages" id="languages" class="language">
+                    <option value="Select">Select</option>
+                    <option value="">L</option>
+                    <option value="">G</option>
+                    <option value="">B</option>
+                    <option value="">T</option>
+                    <option value="">Q</option>
+                </select>
+            </div>
+            <div class="password">
+                <label>Password:</label><br>
+                <input type="password" id="Password" placeholder="Enter Password" required>
+                <label class="confirm">Confirm Password:</label><br>
+                <input type="password" id="Confirm" placeholder="Confirm Password" required>
+            </div>
+            <div class="submit">
+                <p class="para">Already have an account?</p>
+                <button class="btn" type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function verifyPassword() {
+            const password = document.getElementById("Password").value;
+            const confirmPassword = document.getElementById("Confirm").value;
+
+            if (password !== confirmPassword) {
+                alert("Please verify your passwords, both are not matching!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

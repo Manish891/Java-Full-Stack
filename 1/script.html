@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Example</title>
+    </head>
+    <body>
+        <h1 id="title">Hello,DOM!</h1>
+        <p class="description">This is a paragraph.</p>
+        <button onclick="colorchange()">Click Me</button>
+        <button onclick="reset()">Click for reset</button>
+        <script>
+            function colorchange(){
+                const arrayset=['violet','indigo','blue','green','yellow','orange','red']
+                document.body.style.backgroundColor=arrayset[Math.floor(Math.random() * arrayset.length)]
+            }
+            function reset(){
+                document.body.style.backgroundColor="Yellow"
+            }
+            let heading = document.getElementById("title");
+            console.log(heading.innerText);
+
+            let paragraph = document.getElementsByClassName("description")[0];
+            console.log(paragraph.innerText);
+
+            let allparagraphs = document.getElementsByTagName("p");
+            console.log(allparagraphs[0].innerText);
+            
+        </script>
+    </body>
+</html>

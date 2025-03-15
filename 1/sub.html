@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub</title>
+    <link rel="stylesheet" href="sub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="container">
+            <div class = "one"></div>
+            
+             <div>
+                <img src = "login-img.webp" class="image">
+            </div>
+            <h1 class = "sign">Sign up</h1>
+            <div class="name">
+                <label class = "fname">FirstName :</label><br>
+                <input type ="text" placeholder="Enter your FirstName" id="Fname">
+                <label class = "lname">LastName :</label><br>
+                <input type ="text" placeholder="Enter your LastName" id="Lname">
+            </div>
+            <div class="mail">
+                <label>E-mail id:</label><br>
+                <input type="email" title="E-mail" id="email" placeholder="abc@123">
+            </div>
+            <div class="phone">
+                <label>Phone No:</label><br>
+                <input type="text" minlength="10" maxlength="10" placeholder="+91" id="number" required>
+            </div>           
+            <div class="gender">
+                <label>Gender :</label><br>
+                <div class = "Male">
+                <i class="fa-solid fa-person"></i>
+                <label >Male</label>
+                <input name="Gender" type="radio" id="male">
+                </div>
+                <div class = "Female">
+                <i class="fa-solid fa-person-dress"></i>
+                <label>Female</label>
+                <input name="Gender" type="radio" id="female">
+                </div>
+            </div>
+            <div class="gender1">
+            <label for="Languages" class = "language">Prefer Not To Say</label>
+                <select name="languages" id="languages" class = "language">
+                <option value="Select">Select</option>
+                <option value="C++">L</option>
+                <option value="Java">G</option>
+                <option value="JavaScript">B</option>
+                <option value="Python">T</option>
+                <option value="Python">Q</option>
+                </select>
+            </div>
+            <div class="password">
+                <label>Password :</label><br>
+                <input type="text" title="Password" id="Password"placeholder="*">
+                <label class = "confirm"> Confirm Password :</label><br>
+                <input type="text" title="Password" id="Confirm"placeholder="*">   
+            </div>
+            <div class="submit">
+                <p class = "para">Already have an account?</p>
+                <button class = "btn" type ="submit">Log In</button>
+            </div>
+
+             
+        </div>
+        <script>
+            
+            const Fname = document.getElementById("Fname").value;
+            const Lname = document.getElementById("Lname").value;
+            const email = document.getElementById("email").value;
+            const number = document.getElementById("number").value;
+            const btn = document.getElementsByClassName("btn")[0];
+            btn.addEventListener('click', function checkPassword(){
+            const Password = document.getElementById("Password").value;
+            const Confirm = document.getElementById("Confirm").value;
+                if(Password === Confirm && Password !== "" && Confirm !== ""){
+                    let anchor = document.createElement('a');
+                    anchor.href = 'unstop.html';
+                    anchor.textContent = 'click here';
+                    document.body.appendChild(anchor);
+                }else if(Password !== Confirm){
+                    alert("please correct the password")
+                }
+                else if(!Fname && !Lname && !email && !number){
+                    alert("please fill the field")
+                }
+                    
+            })
+        </script> 
+</body>
+</html>
